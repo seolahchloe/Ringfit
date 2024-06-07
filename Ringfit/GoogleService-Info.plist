@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyCwUYCIyakX3VmBTx_cqd6KXJfOLBdyCYU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>620413068308</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.ringfit.Ringfit</string>
+	<key>PROJECT_ID</key>
+	<string>ringfit-e8ae1</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ringfit-e8ae1.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:620413068308:ios:8d60078022f3f744603301</string>
+</dict>
+</plist>

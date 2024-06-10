@@ -42,7 +42,6 @@ struct CardioDonutChartView: View {
                         .foregroundStyle(by: .value("Name", cardio.name))
 //                        .foregroundStyle(cardio.color)
                         .opacity(cardio.name == nil ? 1.0 : (selectedSector == cardio.name ? 1.0 : 0.5))
-                        
                         .annotation(position: .overlay) {
                             VStack(alignment: .center) {
 //                                Text("\(cardio.name)")
@@ -69,6 +68,10 @@ struct CardioDonutChartView: View {
                     .foregroundStyle(Color.LightGray2)
                 }
             }
+//            .chartForegroundStyleScale(
+//                            domain: cardioWorkouts.map { $0.activityType },
+//                            range: chartColors
+//                        )
             .chartLegend(alignment: .center, spacing: 18)
             .frame(height: 230)
             .padding()
@@ -111,16 +114,19 @@ struct CardioDonutChartView: View {
                 }
                 
                 // 동일한 운동 이름을 가진 기록들의 퍼센티지 합산
-                let mergedWorkouts = Dictionary(grouping: filteredWorkouts, by: { $0.name })
-                    .mapValues { workouts in
-                        workouts.reduce(0.0) { $0 + $1.percentage }
-                    }
-                    .map { name, percentage in
-                        let workout = filteredWorkouts.first(where: { $0.name == name })
-                        return CardioWorkout(name: name, percentage: percentage, date: workout?.date ?? Date(), color: workout?.color ?? Color.randomWorkoutColor(), activityType: workout?.activityType ?? .other)
-                    }
+                let groupedWorkouts = Dictionary(grouping: filteredWorkouts, by: { $0.name })
+                let mergedWorkouts = groupedWorkouts.mapValues { workouts in
+                    workouts.reduce(0.0) { $0 + $1.percentage }
+                }
+                let formattedWorkouts = mergedWorkouts.map { name, percentage in
+                    let workout = filteredWorkouts.first(where: { $0.name == name })
+                    return CardioWorkout(name: name, 
+                                         percentage: percentage,
+                                         date: workout?.date ?? Date(),
+                                         color: workout?.color ?? Color.randomWorkoutColor(), activityType: workout?.activityType ?? .other)
+                }
                 
-                self.cardioWorkouts = mergedWorkouts
+                self.cardioWorkouts = formattedWorkouts
                 
                 let totalDuration = self.cardioWorkouts.reduce(0.0) { $0 + $1.percentage }
                 let age = UserViewModel.shared.calculateAge()

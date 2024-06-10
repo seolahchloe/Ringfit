@@ -47,6 +47,7 @@
 		2153A1862B8F389900335C42 /* FirstUserDetailInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153A1852B8F389900335C42 /* FirstUserDetailInfoView.swift */; };
 		2153A1882B8F3E6100335C42 /* EmailSignUpMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153A1872B8F3E6100335C42 /* EmailSignUpMainView.swift */; };
 		2153A18D2B8F6AD000335C42 /* DropDownSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153A18C2B8F6AD000335C42 /* DropDownSelector.swift */; };
+		2155529C2C12CB92002B2A7B /* ChartColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2155529B2C12CB92002B2A7B /* ChartColor.swift */; };
 		217E79CB2B95C8D60053EC54 /* SecondUserDetailInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217E79CA2B95C8D60053EC54 /* SecondUserDetailInfoView.swift */; };
 		217E79CD2B95DB0C0053EC54 /* DateField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217E79CC2B95DB0C0053EC54 /* DateField.swift */; };
 		217E79CF2B95E3780053EC54 /* MyDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217E79CE2B95E3780053EC54 /* MyDateFormatter.swift */; };
@@ -119,6 +120,7 @@
 		2153A1852B8F389900335C42 /* FirstUserDetailInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstUserDetailInfoView.swift; sourceTree = "<group>"; };
 		2153A1872B8F3E6100335C42 /* EmailSignUpMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignUpMainView.swift; sourceTree = "<group>"; };
 		2153A18C2B8F6AD000335C42 /* DropDownSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownSelector.swift; sourceTree = "<group>"; };
+		2155529B2C12CB92002B2A7B /* ChartColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartColor.swift; sourceTree = "<group>"; };
 		217E79CA2B95C8D60053EC54 /* SecondUserDetailInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondUserDetailInfoView.swift; sourceTree = "<group>"; };
 		217E79CC2B95DB0C0053EC54 /* DateField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateField.swift; sourceTree = "<group>"; };
 		217E79CE2B95E3780053EC54 /* MyDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDateFormatter.swift; sourceTree = "<group>"; };
@@ -374,6 +376,7 @@
 			isa = PBXGroup;
 			children = (
 				21FFE5602BBD0851004C1F52 /* WorkoutType.swift */,
+				2155529B2C12CB92002B2A7B /* ChartColor.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -564,6 +567,7 @@
 				211E85D02BA0633400D31A5F /* Calendar+Extensions.swift in Sources */,
 				21FFE5532BA9B7E6004C1F52 /* AuthProgressBar.swift in Sources */,
 				2153A1672B8D945400335C42 /* FCTextField.swift in Sources */,
+				2155529C2C12CB92002B2A7B /* ChartColor.swift in Sources */,
 				2153A1542B8CB2F100335C42 /* HomeView.swift in Sources */,
 				2153A1752B8DD2A800335C42 /* Color+Extensions.swift in Sources */,
 				21FFE5672BCE8F44004C1F52 /* SettingView.swift in Sources */,

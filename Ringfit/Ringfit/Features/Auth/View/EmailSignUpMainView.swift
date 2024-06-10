@@ -67,8 +67,8 @@ struct EmailSignUpMainView: View {
             }
             
             // MARK: - RingfitTabView로 전환
-            updateUserData()
             showRingfitTabView = true
+            updateUserData()
         }
 //        .fullScreenCover(isPresented: $showRingfitTabView) {
 //                    RingfitTabView(cardioAchievementPercentage: 30)
